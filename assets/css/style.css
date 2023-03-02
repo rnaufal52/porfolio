@@ -115,7 +115,7 @@ header nav ul li a:hover {
 section.jumbotron {
   display: flex;
   align-items: center;
-  background: url(../image/home.jpg);
+  background: url(../image/home.webp);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
