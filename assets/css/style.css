@@ -401,6 +401,7 @@ nav.nav-container a.icon {
     padding: 0 20px;
     background-color: #ebe8e8;
     position: fixed;
+    z-index: 9999;
   }
 
   .menu-toggle {
