@@ -115,7 +115,7 @@ header nav ul li a:hover {
 section.jumbotron {
   display: flex;
   align-items: center;
-  background: url(../image/home.jpg);
+  background: url(../image/bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -140,7 +140,7 @@ section.jumbotron ul li a {
 }
 
 section.jumbotron ul li a:hover {
-  color: #1e1e1e;
+  color: #e40090;
 }
 
 section.jumbotron .desc {
@@ -220,7 +220,7 @@ section.project {
   display: none;
 }
 
-/* about and contact */
+/* contact */
 section.content {
   display: flex;
   margin: 70px 30px;
@@ -251,7 +251,32 @@ iframe {
   width: 100%;
 }
 
-section.content .content-desc ul {
+/* about */
+aside.content {
+  display: flex;
+  margin: 70px 30px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5rem;
+}
+
+aside.content .content-desc {
+  order: 2;
+  flex: 2;
+}
+
+aside.content .content-image {
+  order: 1;
+  flex: 1;
+}
+
+.content-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+aside.content .content-desc ul {
   display: flex;
   text-align: left;
   justify-content: flex-start;
@@ -260,16 +285,16 @@ section.content .content-desc ul {
   padding: 0;
 }
 
-section.content .content-desc ul li {
+aside.content .content-desc ul li {
   margin-right: 20px;
 }
 
-section.content .content-desc ul li a {
+aside.content .content-desc ul li a {
   text-decoration: none;
   color: #818181;
 }
 
-section.content .content-desc ul li a:hover {
+aside.content .content-desc ul li a:hover {
   color: #000000;
 }
 
@@ -401,6 +426,7 @@ nav.nav-container a.icon {
     padding: 0 20px;
     background-color: #ebe8e8;
     position: fixed;
+    z-index: 9999;
   }
 
   .menu-toggle {
@@ -431,8 +457,23 @@ nav.nav-container a.icon {
     color: rgb(255, 255, 255);
   }
 
-  /* section about and contact */
+  /* section about */
+  aside.content {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+
+  aside.content .content-desc {
+    order: 1;
+  }
+
+  aside.content .content-image {
+    order: 2;
+  }
+
+  /* section contact */
   section.content {
+    padding-top: 5rem;
     flex-direction: column;
   }
 

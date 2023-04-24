@@ -7,6 +7,11 @@
     <title>Rnaufal</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
+      rel="shortcut icon"
+      type="image/jpg/webp"
+      href="assets/image/logo.webp"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
@@ -78,7 +83,7 @@
       <!-- end home -->
       <!-- start project -->
       <section id="Project" class="project">
-        <h1 class="title box box">Project</h1>
+        <h1 class="title box">Project</h1>
         <!-- Navigasi Project -->
         <div class="myproject box">
           <a href="#GraphicDesign" class="active">Graphic Design</a>
@@ -86,71 +91,46 @@
         </div>
         <!-- Project x -->
         <div class="GraphicDesign show-project show">
-          <div class="card box">
-            <img
-              src="assets/image/poster1.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/poster1.webp" alt="imgproject" />
             <p class="card-text">Poster Kelapa Sawit</p>
           </div>
-          <div class="card box">
-            <img
-              src="assets/image/poster3.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/poster3.webp" alt="imgproject" />
             <p class="card-text">Poster Dirgahayu RI</p>
           </div>
-          <div class="card box">
-            <img
-              src="assets/image/poster2.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/poster2.webp" alt="imgproject" />
             <p class="card-text">Poster Augmented Reality</p>
           </div>
-          <div class="card box">
+          <div class="card">
             <img
               src="assets/image/bussiness card gift in.webp"
               alt="imgproject"
-              loading="lazy"
             />
             <p class="card-text">Bussiness Card Gift In</p>
           </div>
-          <div class="card box">
-            <img
-              src="assets/image/Charless.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/Charless.webp" alt="imgproject" />
             <p class="card-text">Logo Charless</p>
           </div>
-          <div class="card box">
-            <img
-              src="assets/image/Gift In.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/Gift In.webp" alt="imgproject" />
             <p class="card-text">Logo Gift In</p>
           </div>
         </div>
         <!-- Project y -->
         <div class="UI-UX show-project hidden">
-          <div class="card box">
-            <img src="assets/image/ui3.webp" alt="imgproject" loading="lazy" />
+          <div class="card">
+            <img src="assets/image/ui3.webp" alt="imgproject" />
             <p class="card-text">Ini Mie Landing Page</p>
           </div>
-          <div class="card box">
-            <img
-              src="assets/image/Ui2-min.webp"
-              alt="imgproject"
-              loading="lazy"
-            />
+          <div class="card">
+            <img src="assets/image/Ui2-min.webp" alt="imgproject" />
             <p class="card-text">Ini Mie</p>
           </div>
-          <div class="card box">
-            <img src="assets/image/ui1.webp" alt="imgproject" loading="lazy" />
+          <div class="card">
+            <img src="assets/image/ui1.webp" alt="imgproject" />
             <p class="card-text">Ini Mie 3</p>
           </div>
         </div>
@@ -158,17 +138,17 @@
       <!-- end project -->
 
       <!--Start About -->
-      <article>
-        <section id="About" class="content">
-          <!-- desc -->
+      <article id="About">
+        <!-- desc -->
+        <aside class="content">
           <div class="content-desc">
             <h1 class="title box">About Me</h1>
             <p class="box">
-              My name Rifqi Naufal. I am a UI/UX Designer and Graphic Designer
-              artist. lorem ipsum dollor sit ammet, lorem ipsum dollor sit
-              ammet.
+              Hello everyone, my name is
+              <strong>Rifqi Naufal</strong> . I am a UI/UX designer and graphic
+              designer with 2 years of experience.
             </p>
-            <aside class="social-media box">
+            <div class="social-media box">
               <ul>
                 <li>
                   <a
@@ -195,18 +175,18 @@
                   ></a>
                 </li>
               </ul>
-            </aside>
+            </div>
           </div>
           <!-- img -->
           <div class="content-image box">
             <img
-              src="assets/image/home.webp"
-              alt="rnaufal.webp"
+              src="assets/image/profile.jpeg"
+              alt="profile.jpeg"
               class="thumbnail"
               loading="lazy"
             />
           </div>
-        </section>
+        </aside>
       </article>
       <!-- end about -->
 
@@ -214,19 +194,37 @@
       <section id="Contact" class="content">
         <div class="content-desc box">
           <h1 class="title">Contact</h1>
-          <form action="" class="form">
+          <form
+            action="https://formsubmit.co/rifqinaufal621@gmail.com"
+            method="POST"
+            class="form"
+          >
+            <label for="Name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Full Name"
+              id="Name"
+              required
+            />
             <label for="Email">Email</label>
-            <input type="email" placeholder="Email" id="Email" />
-            <label for="Subject">Subject</label>
-            <input type="text" placeholder="Subject" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="Email"
+              required
+            />
+            <input type="hidden" name="_subject" value="Contact From Website" />
             <label for="Message">Message</label>
             <textarea
               name="Message"
               id="Message"
               cols="30"
               rows="10"
+              required
             ></textarea>
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
         <div class="content-image box">
