@@ -421,6 +421,20 @@ nav.nav-container a.icon {
   display: none;
 }
 
+/* thanks */
+.containers {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e6e6;
+  text-align: center;
+  margin: 50px 30%;
+  padding: 5%;
+}
+
+.containers H1 {
+  font-size: 48px;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
@@ -498,6 +512,15 @@ nav.nav-container a.icon {
     width: 33.33%;
     height: auto;
     padding: 30px;
+  }
+
+  .containers {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e6e6;
+    text-align: center;
+    margin: 50px 5%;
+    padding: 5%;
   }
 }
 
